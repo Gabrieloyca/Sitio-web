@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Oyarzun · Architecte urbaniste</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <a class="top-bar__home" href="#" aria-label="Aller à l'accueil">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path
+            d="M3.3 11.4 11.6 3a1 1 0 0 1 1.4 0l8.3 8.4a.75.75 0 0 1-1.06 1.06L19 11.48V20a1 1 0 0 1-1 1h-4.5a.5.5 0 0 1-.5-.5V15h-3v5.5a.5.5 0 0 1-.5.5H5a1 1 0 0 1-1-1v-8.52l-1.27 1.02A.75.75 0 0 1 3.3 11.4Z"
+            fill="currentColor"
+          />
+        </svg>
+      </a>
+      <a class="top-bar__contact" href="#contact">Contact</a>
+    </header>
+
+    <main>
+      <section class="scene" aria-labelledby="profile-title">
+        <div class="scene__map" aria-hidden="false" role="img" aria-label="Carte des projets réalisés en France">
+          <div class="map__markers">
+            <button
+              class="map__marker"
+              type="button"
+              data-label="Paris"
+              data-project="Réaménagement de la place de la République"
+              aria-label="Paris · Réaménagement de la place de la République"
+              style="--x:55%; --y:32%;"
+            ></button>
+            <button
+              class="map__marker"
+              type="button"
+              data-label="Lille"
+              data-project="Plan de mobilité douce métropolitain"
+              aria-label="Lille · Plan de mobilité douce métropolitain"
+              style="--x:64%; --y:18%;"
+            ></button>
+            <button
+              class="map__marker"
+              type="button"
+              data-label="Nantes"
+              data-project="Étude urbaine des berges de Loire"
+              aria-label="Nantes · Étude urbaine des berges de Loire"
+              style="--x:30%; --y:48%;"
+            ></button>
+            <button
+              class="map__marker"
+              type="button"
+              data-label="Bordeaux"
+              data-project="Quartier bas-carbone rive droite"
+              aria-label="Bordeaux · Quartier bas-carbone rive droite"
+              style="--x:27%; --y:60%;"
+            ></button>
+            <button
+              class="map__marker"
+              type="button"
+              data-label="Lyon"
+              data-project="Coulée verte de la Presqu'île"
+              aria-label="Lyon · Coulée verte de la Presqu'île"
+              style="--x:55%; --y:52%;"
+            ></button>
+            <button
+              class="map__marker"
+              type="button"
+              data-label="Marseille"
+              data-project="Renouvellement urbain du littoral"
+              aria-label="Marseille · Renouvellement urbain du littoral"
+              style="--x:60%; --y:75%;"
+            ></button>
+            <button
+              class="map__marker"
+              type="button"
+              data-label="Strasbourg"
+              data-project="Extension du tram transfrontalier"
+              aria-label="Strasbourg · Extension du tram transfrontalier"
+              style="--x:78%; --y:30%;"
+            ></button>
+            <button
+              class="map__marker"
+              type="button"
+              data-label="Toulouse"
+              data-project="Campus circulaire de la ville rose"
+              aria-label="Toulouse · Campus circulaire de la ville rose"
+              style="--x:40%; --y:70%;"
+            ></button>
+          </div>
+        </div>
+
+        <div class="scene__cards">
+          <section class="card card--profile" aria-labelledby="profile-title">
+            <header class="card__header">
+              <img
+                class="card__portrait"
+                src="assets/img/portrait.svg"
+                alt="Portrait illustré de Gabriel Oyarzun"
+                width="120"
+                height="120"
+              />
+              <div>
+                <p class="card__eyebrow">Je suis</p>
+                <h1 id="profile-title">Gabriel Oyarzun</h1>
+                <p class="card__subtitle">Architecte urbaniste, passionné du développement durable des territoires</p>
+              </div>
+            </header>
+            <ul class="card__list">
+              <li>Études de mobilité en France</li>
+              <li>Recherche / publication</li>
+              <li>Autres projets d'architectures</li>
+            </ul>
+          </section>
+
+          <section class="card card--projects" aria-labelledby="projects-title">
+            <header class="card__header card__header--projects">
+              <div>
+                <h2 id="projects-title">Études en France</h2>
+                <p class="card__figure">
+                  <span class="card__figure-value">15</span>
+                  <span class="card__figure-caption">projets en tant que chargé d'études<br />20 en tant que chef de projet</span>
+                </p>
+              </div>
+            </header>
+            <p class="projects__highlight">
+              <strong class="projects__location">Paris</strong>
+              <span class="projects__description">Réaménagement de la place de la République</span>
+            </p>
+            <button class="projects__cta" type="button">
+              <span>Cliquez sur les projets pour en savoir plus</span>
+            </button>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="footer__inner">
+        <h2>Contact</h2>
+        <p>
+          Envoyez-moi un message à
+          <a href="mailto:gabriel.oyarzun@example.com">gabriel.oyarzun@example.com</a>
+          ou appelez le <a href="tel:+33102030405">+33 1 02 03 04 05</a>.
+        </p>
+        <p class="footer__note">Disponible pour des collaborations en France et à l'international.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
