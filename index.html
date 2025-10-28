@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Creativa Aurora</title>
+    <meta name="description" content="Agencia creativa especializada en diseño web, branding y marketing digital.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="hero" id="inicio">
+        <nav class="navbar">
+            <div class="navbar__logo">Aurora</div>
+            <button class="navbar__toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="navbar__links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero__content">
+            <h1>Diseñamos experiencias digitales memorables</h1>
+            <p>Impulsamos tu marca con estrategias creativas, diseño de impacto y soluciones tecnológicas a medida.</p>
+            <div class="hero__actions">
+                <a class="btn btn--primary" href="#contacto">Agenda una llamada</a>
+                <a class="btn btn--secondary" href="#portafolio">Ver proyectos</a>
+            </div>
+        </div>
+        <div class="hero__scroll" aria-hidden="true">Desliza</div>
+    </header>
+
+    <main>
+        <section class="section" id="servicios">
+            <div class="section__header">
+                <span class="section__tag">Servicios</span>
+                <h2>Soluciones integrales para tu marca</h2>
+                <p>Creamos propuestas personalizadas que conectan con tu audiencia y generan resultados medibles.</p>
+            </div>
+            <div class="grid grid--3">
+                <article class="card">
+                    <div class="card__icon">💡</div>
+                    <h3>Branding estratégico</h3>
+                    <p>Definimos la identidad visual y verbal de tu marca con guías completas y diferenciadoras.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon">🖥️</div>
+                    <h3>Diseño y desarrollo web</h3>
+                    <p>Websites modernos, accesibles y optimizados para convertir visitantes en clientes.</p>
+                </article>
+                <article class="card">
+                    <div class="card__icon">🚀</div>
+                    <h3>Marketing de crecimiento</h3>
+                    <p>Campañas multicanal enfocadas en escalar tu presencia digital y fidelizar clientes.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--accent" id="portafolio">
+            <div class="section__header">
+                <span class="section__tag">Portafolio</span>
+                <h2>Historias de éxito</h2>
+                <p>Conoce algunos de los proyectos en los que hemos colaborado con startups y grandes empresas.</p>
+            </div>
+            <div class="grid grid--3">
+                <article class="project">
+                    <div class="project__image project__image--1"></div>
+                    <div class="project__content">
+                        <h3>Nébula Tech</h3>
+                        <p>Rediseñamos su sitio web y aumentamos las conversiones en un 45% en menos de tres meses.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__image project__image--2"></div>
+                    <div class="project__content">
+                        <h3>Verde Vivo</h3>
+                        <p>Desarrollamos su tienda en línea con enfoque mobile-first y estrategias de retención.</p>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project__image project__image--3"></div>
+                    <div class="project__content">
+                        <h3>Athena Studio</h3>
+                        <p>Implementamos una identidad visual completa para su relanzamiento internacional.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="equipo">
+            <div class="section__header">
+                <span class="section__tag">Equipo</span>
+                <h2>Personas que crean magia</h2>
+                <p>Un equipo multidisciplinario enfocado en escuchar, iterar y entregar valor continuo.</p>
+            </div>
+            <div class="grid grid--3">
+                <article class="profile">
+                    <img class="profile__photo" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=400&q=80" alt="Retrato de Laura Gómez">
+                    <h3>Laura Gómez</h3>
+                    <p>Directora creativa</p>
+                </article>
+                <article class="profile">
+                    <img class="profile__photo" src="https://images.unsplash.com/photo-1546456073-92b9f0a8d221?auto=format&fit=crop&w=400&q=80" alt="Retrato de Diego Martínez">
+                    <h3>Diego Martínez</h3>
+                    <p>Líder de desarrollo</p>
+                </article>
+                <article class="profile">
+                    <img class="profile__photo" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Retrato de Ana Torres">
+                    <h3>Ana Torres</h3>
+                    <p>Estratega digital</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section--cta" id="contacto">
+            <div class="section__content">
+                <h2>¿Listo para transformar tu marca?</h2>
+                <p>Agendemos una sesión estratégica para conocer tus objetivos y crear un plan de acción.</p>
+                <form class="form" action="#" method="post">
+                    <div class="form__group">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Correo electrónico</label>
+                        <input id="email" name="email" type="email" placeholder="nombre@empresa.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos sobre tu proyecto" required></textarea>
+                    </div>
+                    <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <p>&copy; <span id="year"></span> Aurora Agencia Creativa. Todos los derechos reservados.</p>
+            <div class="footer__social">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Dribbble">Dribbble</a>
+                <a href="#" aria-label="Behance">Behance</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
